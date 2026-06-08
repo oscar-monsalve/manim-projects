@@ -1,5 +1,10 @@
-from manim import *
+from manim import *  # Standard import statement for Manim
 
 class CreateCircle(Scene):
     def construct(self):
         circle = Circle()
+        circle.set_fill(PINK, opacity=0.5)
+        self.play(Create(circle))
+
+# Excute with
+# uv run manim -pql main.py CreateCircle
